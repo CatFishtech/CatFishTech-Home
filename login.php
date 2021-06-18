@@ -34,9 +34,8 @@ session_start();
 	  </div>
       <div class="signup-form">
     <form action="loginProcess.php" method="post" enctype="multipart/form-data">
-		<h2>
-		<p class="hint-text" align="center">Enter Login Details</p>
-        </h2>
+		<h2 class="hint-text" align="center">Enter Login Details</h2>
+        
         <div class="form-group">
         	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
         </div>
