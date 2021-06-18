@@ -1,0 +1,205 @@
+body {font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+.navbar a.active {
+  background-color: #0fdb2a;
+  color: white;
+}
+.header {
+    padding: 6px;
+    text-align: center;
+    background: aliceblue;
+    color: black;
+  }
+
+  /* Increase the font size of the h1 element */
+  .header h1 {
+    font-size: 40px;
+  }
+
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    /* Hide overflow */
+    background-color:#333;
+      /* Dark background color */
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    /* Make sure that the links stay side-by-side */
+    display: block;
+    /* Change the display to block, for responsive reasons (see below) */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding: 14px 20px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline */
+  }
+
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+    /* Float a link to the right */
+  }
+
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color:#ddd;
+    /* Grey background color */
+    color: black;
+    /* Black text color */
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: left;
+    width: 50px;
+    border-radius: 0%;
+    float:left;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .logo {
+      max-width: 170px;
+    }
+  }
+
+  .logo a {
+    display: block;
+  }
+
+  .logo img {
+    width: 50%;
+
+  }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.footer{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 55px 50px;
+  width: 100%;
+  
+}
