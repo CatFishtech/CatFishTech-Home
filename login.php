@@ -87,19 +87,53 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
-<?php 
-        if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
-        }        
-        ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CatFish Tech| Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style2.css" rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<div class="header">
+      <div class="logo">
+        <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
+            style="width:80px;height:80px;"></a>
+    </div>
+		<h1>CatFish Tech</h1>
+		<h2>FOOD ORDERING PLATFORM</h2>
+	  </div>
+	  <div class="navbar">
+		<a href="index.php">Home</a>
+		<a class="active" href="login.php">Login</a>
+    <a href="register.php">Signup</a>
+	  </div>
+    
 
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
-?>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
+    <div class="imgcontainer">
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <p style="font-size:16px; color:red" align="center"> </p>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" class="form-control" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" class="form-control" required>
+        
+            <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <p>Don't have an account? <a href="register.html">Sign up now</a>.</p>
+    <div class="clearfix">
+    <button type="submit">Login</button>
+         <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="forgot-password.html">password?</a></span>
+      </div>
+  </form>
+</div>
+</body>
+</html>
