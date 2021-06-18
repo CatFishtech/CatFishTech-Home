@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: admin.php");
+    header("location: admin.html");
     exit;
 }
  
@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location: admin.php");
+                            header("location: admin.html");
                         } else{
                             // Password is not valid, display a generic error message
                             $login_err = "Invalid username or password.";
@@ -87,59 +87,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>CatFish Tech| Login Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style2.css" rel='stylesheet' type='text/css' />
-</head>
-<body>
-	<div class="header">
-      <div class="logo">
-        <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
-            style="width:80px;height:80px;"></a>
-    </div>
-		<h1>CatFish Tech</h1>
-		<h2>FOOD ORDERING PLATFORM</h2>
-	  </div>
-	  <div class="navbar">
-		<a href="index.php">Home</a>
-		<a class="active" href="login.php">Login</a>
-    <a href="register.php">Signup</a>
-	  </div>
-    <?php 
+<?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <div class="imgcontainer">
-      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <p style="font-size:16px; color:red" align="center"> </p>
-      <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-      <span class="invalid-feedback"><?php echo $username_err; ?></span>
-
-      <label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-      <span class="invalid-feedback"><?php echo $password_err; ?></span>
-        
-            <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-    <div class="clearfix">
-    <button type="submit">Login</button>
-         <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="forgot-password.html">password?</a></span>
-      </div>
-  </form>
-</div>
-</body>
-</html>

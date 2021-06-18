@@ -23,9 +23,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
  
   <div class="sidebar">
-    <a class="active" href="admin.php">Dashboard</a>
-    <a href="orders.php">Orders</a>
-    <a href="breakfast.php">Client Page</a>
+    <a class="active" href="admin.html">Dashboard</a>
+    <a href="orders.html">Orders</a>
+    <a href="breakfast.html">Client Page</a>
     <a href="logout.php">Logout</a>
   </div>
   
