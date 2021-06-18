@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up| CatFish Tech.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style2.css" rel='stylesheet' type='text/css' />
+  </head>
+<body>
+<div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo2.jpeg" alt="logo" align="left"
+            style="width:80px;height:80px;"></a>
+    </div>
+		<h1>CatFish Tech</h1>
+		<h2>FOOD ORDERING PLATFORM</h2>
+	  </div>
+	  <div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="login.html">Login</a>
+    <a class="active" href="register.html">Signup</a>
+	  </div>
+
+    <form action="register.php" method="post" style="border:1px solid #ccc">
+  <div class="container">
+    <h2>Sign Up</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" class="form-control" required>
+
+    <label for="email"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password" name="password" class="form-control" required>
+
+    <label for="company"><b>Confirm Password</b></label>
+    <input type="text" placeholder="Repeat Password" name="confirm_password" class="form-control" required>
+       
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>Already have an account? <a href="login.html" style="color:dodgerblue">Login Here</a>.</p>
+
+    <div class="clearfix">
+    <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
