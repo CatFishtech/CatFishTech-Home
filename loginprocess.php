@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['save']))
 {
     extract($_POST);
-    include ("config.php");
+    include("config.php");
     $sql=mysqli_query($conn,"SELECT * FROM register where Email='$email' and Password='md5($pass)'");
     $row  = mysqli_fetch_array($sql);
     if(is_array($row))
