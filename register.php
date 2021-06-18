@@ -117,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <a class="active" href="register.php">Signup</a>
 	  </div>
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="container">
     <h2>Sign Up</h2>
     <p>Please fill in this form to create an account.</p>
