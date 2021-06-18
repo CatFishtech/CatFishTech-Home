@@ -7,6 +7,9 @@
       <title>CatFishTech| Admin Panel</title>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style2.css" rel='stylesheet' type='text/css' />
+  <link href="style3.css" rel='stylesheet' type='text/css' />
+    
     <link rel="stylesheet" href="assests/css/style.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
