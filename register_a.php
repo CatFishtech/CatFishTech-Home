@@ -1,6 +1,6 @@
 <?php
 extract($_POST);
-include("inckudes/config.php");
+include("includes/config.php");
 $sql=mysqli_query($conn,"SELECT * FROM register where Email='$email'");
 if(mysqli_num_rows($sql)>0)
 {
