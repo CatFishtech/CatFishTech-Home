@@ -33,7 +33,7 @@ session_start();
     <a href="register.php">Signup</a>
 	  </div>
       <div class="signup-form">
-    <form action="loginProcess.php" method="post" enctype="multipart/form-data">
+    <form action="loginprocess.php" method="post" enctype="multipart/form-data">
 		<h2 class="hint-text" align="center">Enter Login Details</h2>
         
         <div class="form-group">
