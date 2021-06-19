@@ -79,6 +79,7 @@ if (isset($_POST['submit'])) {
 			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>
 	</div>
+</div>
 	
 
 </body>
