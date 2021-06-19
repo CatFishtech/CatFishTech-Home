@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +74,7 @@ tr:nth-child(even) {
   
   <div class="content">
     <div class="header">
-    <h1>CatFish Tech</h1>
+    <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>ADMIN DASHBOARD</h2>
     <h3>Orders</h3>
     </div>

@@ -1,4 +1,11 @@
 <?php  
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
 if(isset($_POST['save']))  
 {  
 $host="freedb.tech";//host name  
