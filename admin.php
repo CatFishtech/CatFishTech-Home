@@ -1,3 +1,13 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,22 +41,8 @@
     <h2>ADMIN DASHBOARD</h2>
     </div>
     <div class="signup-form">
-    <form action="admin.php" method="post" enctype="multipart/form-data">
-		<h2>Welcome</h2>
+		<h2 class="signup-form">Welcome <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to your Dashboard.</h2>
         <br>
-
-            <?php
-				session_start();
-				include'includes/config.php';
-				$ID= $_SESSION["ID"];
-				$sql=mysqli_query($conn,"SELECT * FROM register where ID='$ID' ");
-				$row  = mysqli_fetch_array($sql);
-            ?>
-            
-        <img src="upload/<?php echo $row['File'] ?>" height="150" width="150" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
-		<p class="hint-text"><br><b>Welcome </b><?php echo $_SESSION["First_Name"] ?> <?php echo $_SESSION["Last_Name"] ?></p>
-        <div class="text-center">Want to Leave the Page? <br><a href="logout.php">Logout</a></div>
-    </form>
 	
 </div>
     <br>

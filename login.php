@@ -1,6 +1,11 @@
 <?php
 // Initialize the session
 session_start();
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  header("location: welcome.php");
+  exit;
+}
  ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +45,7 @@ session_start();
         	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
 		<div class="form-group">
             <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Login</button>

@@ -35,12 +35,10 @@ session_start();
       <div class="signup-form">
     <form action="register_a.php" method="post" enctype="multipart/form-data">
 		<h2 class="hint-text" align="center">Create your account</h2>
-        <div class="form-group">
-			<div class="row">
 				<div class="form-group">
-        <input type="firstname" class="form-control" name="firstname" placeholder="First Name" required="required"></div>
-			</div>        	
-        </div>
+        <input type="firstname" class="form-control" name="firstname" placeholder="Full Name" required="required">
+        </div>        	
+        
         <div class="form-group">
         	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
         </div>

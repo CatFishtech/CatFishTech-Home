@@ -84,28 +84,10 @@
 
       <p class="footer-company-name">CatFishTechCo. © 2021</p>
     </div>
-
-    <div class="footer-center">
-
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>Jogolo Street..</span> Jogolo Plaza, Mariakani</p>
-      </div>
-
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+254759719777</p>
-      </div>
-
       <div>
         <i class="fa fa-envelope"></i>
         <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
       </div>
-
-    </div>
-
-    <div class="footer-right">
-
       <p class="footer-company-about">
         <span>About the company</span>
         CatFish Tech Co is a software company offering a wide range of software technologies for your business.
