@@ -48,6 +48,8 @@ h3{
   </style>
 </head>
 <body>
+<div class="content">
+
     <div class="header">
       <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
         <h2>BREAKFAST MENU</h2>
@@ -153,7 +155,7 @@ h3{
       <p>Made by Kimae Ngowa</p>
       <p>Copyright © 2021 CatFishTech</p>
     </div>
-    
+    </div>
     </body>
       
       
