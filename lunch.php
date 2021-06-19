@@ -53,7 +53,7 @@ h3{
         <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
             style="width:80px;height:80px;"></a>
       </div>
-        <h1>CatFish Tech</h1>
+      <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
         <h2>LUNCH MENU</h2>
       </div>
       <div class="navbar">
