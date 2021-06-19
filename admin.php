@@ -37,7 +37,7 @@
 
             <?php
 				session_start();
-				include 'includes/config.php';
+				include'includes/config.php';
 				$ID= $_SESSION["ID"];
 				$sql=mysqli_query($conn,"SELECT * FROM register where ID='$ID' ");
 				$row  = mysqli_fetch_array($sql);

@@ -1,11 +1,17 @@
 
 <?php
-// Enter your Host, username, password, database below.
-// I left password empty because i do not set password on localhost.
-$con = mysqli_connect("remotemysql.com","SrTfMJpCxK","taBr4zjoLP","SrTfMJpCxK","register");
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'remotemysql.com');
+define('DB_USERNAME', 'SrTfMJpCxK');
+define('DB_PASSWORD', 'taBr4zjoLP');
+define('DB_NAME', 'SrTfMJpCxK');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
 // Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
 ?>
