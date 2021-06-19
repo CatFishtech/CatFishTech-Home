@@ -1,4 +1,7 @@
 <?php
+session_start();
+if(isset($_POST['save']))
+{
 extract($_POST);
 include("config.php");
 $sql=mysqli_query($conn,"SELECT * FROM register where Email='$email'");
@@ -25,5 +28,5 @@ else(isset($_POST['save']))
 		echo "Error.Please try again";
 	}
 }
-
+}
 ?>
