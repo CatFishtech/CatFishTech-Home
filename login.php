@@ -41,19 +41,8 @@ if (isset($_POST['submit'])) {
 
 </head>
 <body>
-	<div class="header">
-      <div class="logo">
-        <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
-            style="width:80px;height:80px;"></a>
-    </div>
-		<h1>CatFish Tech</h1>
-		<h2>FOOD ORDERING PLATFORM</h2>
-	  </div>
-	  <div class="navbar">
-		<a href="index.php">Home</a>
-		<a class="active" href="login.php">Login</a>
-    <a href="register.php">Signup</a>
-	  </div>
+<div style="background-image: url('images/bg.jpg');">
+
       <div class="container">
 		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
@@ -68,6 +57,5 @@ if (isset($_POST['submit'])) {
 			</div>
 			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 		</form>
-	</div>
 </body>
 </html>
