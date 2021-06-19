@@ -88,10 +88,7 @@
         <i class="fa fa-envelope"></i>
         <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
       </div>
-      <p class="footer-company-about">
-        <span>About the company</span>
-        CatFish Tech Co is a software company offering a wide range of software technologies for your business.
-      </p>
+      
 
       <div class="footer-icons">
 
