@@ -2,6 +2,7 @@
 // Include config file
 require_once "config.php";
  
+
 // Define variables and initialize with empty values
 $email = $password = $confirm_password = $fullname= "";
 $email_err = $password_err = $confirm_password_err = $fullname_err= "";
@@ -129,4 +130,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
+<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
  

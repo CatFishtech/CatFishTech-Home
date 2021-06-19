@@ -33,27 +33,27 @@ session_start();
 	  </div>
 
       <div class="signup-form">
-    <form action="register_a.php" method="post" enctype="multipart/form-data">
+    <form action="register_a.php" method="post">
 		<h2 class="hint-text" align="center">Create your account</h2>
 				<div class="form-group">
-        <input type="fullname" class="form-control" name="fullname" placeholder="Full Name" required="required">
+        <input type="fullname" name="fullname" placeholder="Full Name" required="required">
         </div>        	
         
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        	<input type="email"  name="email" placeholder="Email" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            <input type="password" name="password" placeholder="Password" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required="required">
         </div>
                 
         <div class="form-group">
 			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
 		</div>
 		<div class="form-group">
-            <button type="submit"  class="btn btn-success btn-lg btn-block">Register Now</button>
+            <button type="submit"  class="btn btn-primary" value="submit">Register Now</button>
         </div>
         <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
     </form>

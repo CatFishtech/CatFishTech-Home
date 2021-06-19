@@ -81,8 +81,9 @@
         <a href="#">Contact</a>
       </p>
       <div class="footer-company-name">
-      <p>CatFishTechCo. © 2021</p>
       <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
+
+      <p>CatFishTechCo. © 2021</p>
     </div>
   </footer>
 

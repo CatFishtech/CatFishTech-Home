@@ -80,3 +80,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
+<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
+
