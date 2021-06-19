@@ -46,9 +46,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
       // Validate Full Name
       if(empty(trim($_POST["fullname"]))){
-        $email_err = "Please enter a fullname.";
+        $fullname_err = "Please enter a fullname.";
     } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["fullname"]))){
-        $email_err = "Full Name can only contain letters";
+        $fullname_err = "Full Name can only contain letters";
     } else{
         // Prepare a select statement
         $sql = "SELECT ID FROM register WHERE fullname = ?";
