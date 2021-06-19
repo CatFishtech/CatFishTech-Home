@@ -13,8 +13,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate email
     if(empty(trim($_POST["email"]))){
         $email_err = "Please enter a email.";
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["email"]))){
-        $email_err = "Email can only contain letters, numbers, and underscores.";
+    } elseif(!preg_match('/^[a-zA-Z0-@_]+$/', trim($_POST["email"]))){
+        $email_err = "Email can only contain letters and characters.";
     } else{
         // Prepare a select statement
         $sql = "SELECT ID FROM register WHERE email = ?";
@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       // Validate Full Name
       if(empty(trim($_POST["fullname"]))){
         $fullname_err = "Please enter a fullname.";
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["fullname"]))){
+    } elseif(!preg_match('/^[a-zA_]+$/', trim($_POST["fullname"]))){
         $fullname_err = "Full Name can only contain letters";
     } else{
         // Prepare a select statement
