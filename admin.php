@@ -30,11 +30,9 @@ if (!isset($_SESSION['username'])) {
   
   <div class="content">
     <div class="header">
-    <h1>CatFish Tech</h1>
+    <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>ADMIN DASHBOARD</h2>
     </div>
-        <br>
-        <?php echo "<h2>Welcome " . $_SESSION['username'] . "</h2>"; ?>
 	
     <br>
     <div class= "footer">
