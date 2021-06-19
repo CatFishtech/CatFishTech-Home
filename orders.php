@@ -80,7 +80,7 @@ tr:nth-child(even) {
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("localhost", "root", "", "catfish");
+$conn = mysqli_connect("freedb.tech", "freedbtech_catfish", "catfish61", "freedbtech_catfish");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -106,7 +106,7 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("localhost", "root", "", "catfish");
+$conn = mysqli_connect("freedb.tech", "freedbtech_catfish", "catfish61", "freedbtech_catfish");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -132,7 +132,7 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("localhost", "root", "", "catfish");
+$conn = mysqli_connect("freedb.tech", "freedbtech_catfish", "catfish61", "freedbtech_catfish");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
