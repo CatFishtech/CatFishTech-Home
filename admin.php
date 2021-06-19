@@ -1,29 +1,22 @@
-<?php
-// Initialize the session
+<?php 
+
 session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-      <title>CatFishTech| Admin Panel</title>
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CatFishTech| Admin Panel</title>
   <link href="style2.css" rel='stylesheet' type='text/css' />
   <link href="style3.css" rel='stylesheet' type='text/css' />
     
-    <link rel="stylesheet" href="assests/css/style.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -40,11 +33,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h1>CatFish Tech</h1>
     <h2>ADMIN DASHBOARD</h2>
     </div>
-    <div class="signup-form">
-		<h2 class="signup-form">Welcome <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to your Dashboard.</h2>
         <br>
+        <?php echo "<h2>Welcome " . $_SESSION['username'] . "</h2>"; ?>
 	
-</div>
     <br>
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>
