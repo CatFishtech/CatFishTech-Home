@@ -1,10 +1,10 @@
 
 <?php 
 
-$server = "remotemysql";
-$user = "SrTfMJpCxK";
-$pass = "taBr4zjoLP";
-$database = "SrTfMJpCxK";
+$server = "localhost";
+$user = "root";
+$pass = "";
+$database = "catfish";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 
