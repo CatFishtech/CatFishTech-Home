@@ -119,14 +119,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <a href="register.php">Signup</a>
 	  </div>
       <div class="signup-form">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 		<h2 class="hint-text" align="center">Enter Login Details</h2>
         
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        	<input type="email"  name="email" placeholder="Email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+                <span class="invalid-feedback"><?php echo $email_err; ?></span>
+            </div>   
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            <input type="password"  name="password" placeholder="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+            </div>   
         </div>
 		<div class="form-group">
             <button type="submit" class="btn btn-primary">Login</button>

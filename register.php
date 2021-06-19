@@ -166,23 +166,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
 		<h2 class="hint-text" align="center">Create your account</h2>
 				<div class="form-group">
-        <input type="fullname" class="form-control" name="fullname" placeholder="Full Name"<?php echo (!empty($fullname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $fullname; ?>">
+        <input type="fullname"  name="fullname" placeholder="Full Name" class="form-control <?php echo (!empty($fullname_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $fullname; ?>">
                 <span class="invalid-feedback"><?php echo $fullname_err; ?></span>
             </div>     
         </div>        	
         
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email"<?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+        	<input type="email"  name="email" placeholder="Email"class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>     
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+            <input type="password"  name="password" placeholder="Password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>    
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"<?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
+            <input type="password"  name="confirm_password" placeholder="Confirm Password"class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>     
         </div>
