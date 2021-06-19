@@ -33,20 +33,20 @@ session_start();
 	  </div>
 
       <div class="signup-form">
-    <form action="register_a.php" method="post">
+    <form action="register_a.php" method="post" enctype="multipart/form-data">
 		<h2 class="hint-text" align="center">Create your account</h2>
 				<div class="form-group">
-        <input type="fullname" name="fullname" placeholder="Full Name" required="required">
+        <input type="fullname" class="form-control" name="fullname" placeholder="Full Name" required="required">
         </div>        	
         
         <div class="form-group">
-        	<input type="email"  name="email" placeholder="Email" required="required">
+        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" name="password" placeholder="Password" required="required">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required="required">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
         </div>
                 
         <div class="form-group">
