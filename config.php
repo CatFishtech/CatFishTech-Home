@@ -1,7 +1,6 @@
 
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
+/* Database credentials. Assuming you are running MySQL) */
 define('DB_SERVER', 'remotemysql.com');
 define('DB_USERNAME', 'SrTfMJpCxK');
 define('DB_PASSWORD', 'taBr4zjoLP');
