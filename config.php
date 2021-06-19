@@ -1,7 +1,7 @@
 
 <?php 
 
-$server = "remotemysql.com";
+$server = "remotemysql";
 $user = "SrTfMJpCxK";
 $pass = "taBr4zjoLP";
 $database = "SrTfMJpCxK";
