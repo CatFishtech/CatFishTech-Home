@@ -49,10 +49,6 @@ h3{
 </head>
 <body>
     <div class="header">
-      <div class="logo">
-        <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
-            style="width:80px;height:80px;"></a>
-      </div>
       <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
         <h2>LUNCH MENU</h2>
       </div>
