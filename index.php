@@ -70,9 +70,8 @@
       <h3>CatFishTech<span>Co.</span></h3>
 
       <p class="footer-links">
-        <a href="main.html" class="link-1">Home</a>
-
-
+        <a href="index.php" class="link-1">Home</a>
+      
         <a href="#">Pricing</a>
 
         <a href="#">About</a>
@@ -81,34 +80,10 @@
 
         <a href="#">Contact</a>
       </p>
-
-      <p class="footer-company-name">CatFishTechCo. © 2021</p>
+      <div class="footer-company-name">
+      <p>CatFishTechCo. © 2021</p>
+      <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
     </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
-      </div>
-      
-
-      <div class="footer-icons">
-
-        <a href="https://www.facebook.com/CatFish-Tech-105013298327778">
-          <img src=" https://www.shareicon.net/data/2015/09/10/98764_facebook_512x512.png" alt="facebook"
-            style="width:42px;height:42px;"></a>
-        <a href="https://www.facebook.com/CatFish-Tech-105013298327778">
-          <img
-            src="https://w7.pngwing.com/pngs/66/196/png-transparent-whatsapp-ipa-messaging-apps-viber-text-trademark-logo.png "
-            alt="whatsapp" style="width:42px;height:42px;"></a>
-
-        <a href="https://www.facebook.com/CatFish-Tech-105013298327778">
-          <img src=" https://th.bing.com/th/id/OIP.CqXWN5l4IM2LxlE-H0lHOAHaHa?pid=ImgDet&rs=1" alt="twitter"
-            style="width:42px;height:42px;"></a>
-
-
-      </div>
-
-    </div>
-
   </footer>
 
 </body>
