@@ -56,8 +56,7 @@ if (isset($_POST['submit'])) {
 
 <link href="style1.css" rel='stylesheet' type='text/css' />
 </head>
-<body>
-<div style="background-image: url('images/bg.jpg');">
+<body style="background-image: url('images/bg.jpg');">
       <div class="container">
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
@@ -79,8 +78,5 @@ if (isset($_POST['submit'])) {
 			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>
 	</div>
-</div>
-	
-
 </body>
 </html>
