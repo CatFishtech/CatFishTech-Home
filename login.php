@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 <body>
-<div style="background-image: url('images/bg.jpg');">
+<div style="background-image: url('images/mountains.jpg');">
 
       <div class="container">
 		<form action="" method="POST" class="login-email">
