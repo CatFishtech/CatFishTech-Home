@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
 
 <link href="style1.css" rel='stylesheet' type='text/css' />
 </head>
-<body style="background-image: url('images/bg.jpg');">
+<body style="background-image: url('images/mountains.jpg');">
       <div class="container">
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
