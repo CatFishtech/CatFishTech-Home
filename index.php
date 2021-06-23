@@ -29,7 +29,7 @@
     <a href="about.php">About</a>
 
   </div>
-  <article style="background-image: url('images/home.jpg');">
+  <section style="background-image: url('images/home.jpg'); width:100%"  >
 
   <h1 align="center">CatFish Tech</h1>
   <h2 align="center">FOOD ORDERING PLATFORM</h2>
