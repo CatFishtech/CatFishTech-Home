@@ -22,8 +22,6 @@
       <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
           style="width:80px;height:80px;"></a>
     </div>
-    <h1>CatFish Tech</h1>
-    <h2>FOOD ORDERING PLATFORM</h2>
   </div>
   <div class="navbar">
     <a class="active" href="index.php">Home</a>
@@ -31,38 +29,12 @@
     <a href="about.php">About</a>
 
   </div>
+  <div style="background-image: url('images/home.jpg'):">
+  <h1>CatFish Tech</h1>
+  <h2>FOOD ORDERING PLATFORM</h2>
+  </div>
 
-  <!-- Slide Show -->
-  <section>
-    <img class="mySlides" src="https://www.ontherocksnow.co.nz/wp-content/uploads/2017/01/spicy-chicken-burger-.jpg"
-      style="width:100%">
-    <img class="mySlides" src="https://www.groundzeroweb.com/wp-content/uploads/2016/11/Biryani.jpg" style="width:100%">
-    <img class="mySlides"
-      src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2016/08/weird-fast-food-combos-social-081016.jpg"
-      style="width:100%">
-    <img class="mySlides"
-      src="https://2.bp.blogspot.com/-ChSqQAWrT8g/W_vSTFFOQaI/AAAAAAABkZA/Fa1pQS8CUvszTokCEDSMXRMgYpF-6FzhACLcBGAs/w1200-h630-p-k-no-nu/IMG_7488.jpg"
-      style="width:100%">
-
-  </section>
-
-  <script>
-    // Automatic Slideshow - change image every 3 seconds
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 3000);
-    }
-  </script>
+ 
 
   <footer class="footer-distributed">
 
