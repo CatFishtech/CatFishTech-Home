@@ -29,9 +29,10 @@
     <a href="about.php">About</a>
 
   </div>
-  <div style="background-image: url('images/home.jpg'):">
-  <h1>CatFish Tech</h1>
-  <h2>FOOD ORDERING PLATFORM</h2>
+  <div style="background-image: url('images/home.jpg');">
+
+  <h1 align="center">CatFish Tech</h1>
+  <h2 align="center">FOOD ORDERING PLATFORM</h2>
   </div>
 
  
