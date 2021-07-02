@@ -18,43 +18,26 @@
 
 <body>
   <div class="header">
-    <div class="logo">
-      <a href="index.php"><img src="images/logo2.jpeg" alt="logo" align="left"
-          style="width:80px;height:80px;"></a>
-    </div>
+    
   </div>
   <div class="navbar">
-    <a class="active" href="index.php">Home</a>
+    <a href="index.php">Home</a>
     <a href="login.php">Login</a>
     <a href="about.php">About</a>
 
   </div>
-  <section style="background-image: url('images/home.jpg');" width=100% height="200px" >
-
+  <div class="image" style="background-image: url('https://media.istockphoto.com/photos/elevated-view-of-frame-made-of-ripe-vegetables-isolated-on-white-picture-id1030918230?k=6&m=1030918230&s=612x612&w=0&h=beX7YAQOzwzFEsGyRYutVvaP-c2Ih4sMSaft1w7MYww=');height: 500px;">
+<div class="text">
   <h1 align="center" >CatFish Tech</h1>
   <h2 align="center">FOOD ORDERING PLATFORM</h2>
-  </article>
+</div>
+</div>
 
  
 
-  <footer class="footer-distributed">
-
-    <div class="footer-left">
-
-      <h3>CatFishTech<span>Co.</span></h3>
-
-      <p class="footer-links">
-        <a href="index.php" class="link-1">Home</a>
-      
-        <a href="#">Pricing</a>
-
-        <a href="#">About</a>
-
-        <a href="#">Faq</a>
-
-        <a href="#">Contact</a>
-      </p>
-      <div class="footer-company-name">
+  <footer class="footer">
+   <h3>CatFishTech<span>Co.</span></h3>
+ <div class="mail">
       <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
 
       <p>CatFishTechCo. © 2021</p>
