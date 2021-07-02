@@ -76,13 +76,13 @@ h3{
   .navbar a.active{
     background-color: rgb(11, 240, 106);
   }
-  .footer{
+  .footer-dis{
     text-align: center;
     box-sizing: border-box;
     padding: 55px 50px;
     width: 100%;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     
   }
   </style>
@@ -191,7 +191,7 @@ h3{
        <button type="submit" name= "save">PLACE ORDER</button>
       </div>
 </form>
-    <div class= "footer">
+    <div class= "footer-dis">
       <p>Made by Kimae Ngowa</p>
       <p>Copyright © 2021 CatFishTech</p>
     </div>
