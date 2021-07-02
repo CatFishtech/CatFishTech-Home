@@ -20,14 +20,14 @@
   <div class="header">
     
   </div>
-  <div class="navbar" style="float: left;">
+  <div class="navbar" style="float: left;width:100%">
     <a href="index.php">Home</a>
     <a href="login.php">Login</a>
     <a href="about.php">About</a>
 
   </div>
   <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
-<div class="text">
+<div class="text" style="color:white;">
   <h1 align="center" >CatFish Tech</h1>
   <h2 align="center">FOOD ORDERING PLATFORM</h2>
 </div>
