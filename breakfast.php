@@ -55,6 +55,36 @@ else
 h3{
   color: red;
 }
+.navbar {
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  .navbar a {
+    float: left;
+    color: White;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(38, 202, 231);
+    color: black;
+  }
+  .navbar a.active{
+    background-color: rgb(11, 240, 106);
+  }
+  .footer{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 55px 50px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    
+  }
   </style>
 </head>
 <body>
