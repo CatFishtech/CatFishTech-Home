@@ -40,7 +40,7 @@ body {
 
   
   .navbar a:hover {
-    background-color:rgb(96, 98, 235);
+    background-color:rgb(19, 19, 24);
     color: black;
     
   }
@@ -56,6 +56,56 @@ body {
     padding-top: 80px;
 
   }
+
+  .columns {
+    width: 100%;
+    padding: 10px;
+    padding-left: 10px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: rgb(224, 37, 37);
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: rgb(228, 235, 230);
+    font-size: 20px;
+  }
+    
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+    .price.button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
 
 
   .footer{
