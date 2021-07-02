@@ -26,7 +26,7 @@
     <a href="about.php">About</a>
 
   </div>
-  <div class="image" style="background-image: url('https://media.istockphoto.com/photos/elevated-view-of-frame-made-of-ripe-vegetables-isolated-on-white-picture-id1030918230?k=6&m=1030918230&s=612x612&w=0&h=beX7YAQOzwzFEsGyRYutVvaP-c2Ih4sMSaft1w7MYww=');height: 500px;">
+  <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
 <div class="text">
   <h1 align="center" >CatFish Tech</h1>
   <h2 align="center">FOOD ORDERING PLATFORM</h2>
