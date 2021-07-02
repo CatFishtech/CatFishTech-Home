@@ -15,35 +15,30 @@ body {
     font-size: 40px;
   }
  
-    .navbar {
+  .topnav {
     overflow: hidden;
     background-color:white;
-    }
-
+  }
   
-  .navbar a {
+  .topnav a {
     float: left;
-    display: block;
     color: black;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 16px;
     text-decoration: none;
-    }
-
-  .navbar a.right {
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(38, 202, 231);
+    color: black;
+  }
+  .topnav-right {
     float: right;
   }
-  .navbar a.active {
-    background-color: #0fdb2a;
-    color: white;
-  }
-
   
-  .navbar a:hover {
-    background-color:rgb(108, 229, 250);
-    color: black;
-    
-  }
+  
+  
 
   .image{
     background-repeat: no-repeat;
