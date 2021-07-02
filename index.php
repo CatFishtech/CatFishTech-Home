@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style1.css" rel='stylesheet' type='text/css' />
-  <title>CatFish Tech| Guaranteed Software Production</title>
+  <title>CatFish Tech| Software Design At Its Core</title>
 
 
 </head>
@@ -13,13 +13,10 @@
 <body>
   
   <div class="topnav">
-    <img src="images/logo.jpg" width="200px">
-    <div class="topnav-right">
+    <center><img src="images/logo.jpg" alt="logo" width="200px"></center>
     <a href="index.php">Home</a>
     <a href="login.php">Login</a>
     <a href="#about">About</a>
-
-      </div>
   </div>
   
   <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
