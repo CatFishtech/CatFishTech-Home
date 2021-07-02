@@ -40,7 +40,7 @@ body {
 
   
   .navbar a:hover {
-    background-color:rgb(19, 19, 24);
+    background-color:rgb(108, 229, 250);
     color: black;
     
   }
@@ -52,7 +52,7 @@ body {
   }
 
   .text{
-    color:black;
+    color:white;
     padding-top: 80px;
 
   }

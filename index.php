@@ -20,7 +20,7 @@
   <div class="header">
     
   </div>
-  <div class="navbar">
+  <div class="navbar" style="float: left;">
     <a href="index.php">Home</a>
     <a href="login.php">Login</a>
     <a href="about.php">About</a>
