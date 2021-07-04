@@ -16,7 +16,7 @@
     <center><img src="images/logo.jpg" alt="logo" width="200px"></center>
     <a href="index.php">Home</a>
     <a href="login.php">Login</a>
-    <a href="#about">About</a>
+    <a href="about.php">About</a>
   </div>
   
   <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
