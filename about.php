@@ -28,9 +28,14 @@
 
 <p style="color: black;font: 1em Times New Roman;text-align: center;"><b>About</b></p>
 
-<article style="background-color: rgb(162, 77, 241);">
+<article style="background-color: rgb(162, 77, 241); align: center;">
     <p>
-
+    With the speed at which technology is developing and new technologies emerge, 
+    managing your ICT infrastructure can sometimes become a challenge. 
+    Catfishtech developed a new concept that will change how restaurants and hotels work.
+    we worked with technology providers around the world to bring you reliability in the hotel industry.
+    Choose any package to be installed in your hotel and maximise your revenue.
+   
     </p>
 </article>
 
