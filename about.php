@@ -28,7 +28,7 @@
 
 <p style="color: black;font: 1em Times New Roman;text-align: center;"><b>About</b></p>
 
-<article style="background-color: rgb(162, 77, 241); align: center;">
+<article align="center">
     <p>
     With the speed at which technology is developing and new technologies emerge, 
     managing your ICT infrastructure can sometimes become a challenge. 
