@@ -54,6 +54,7 @@ h3{
 }
 .navbar {
     overflow: hidden;
+    background-color: rgb(9, 18, 43)
   }
   
   .navbar a {
@@ -66,11 +67,11 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(38, 90, 231);
+    background-color: rgb(26, 42, 88);
     color: black;
   }
   .navbar a.active{
-    background-color: rgb(38, 90, 231);
+    background-color: rgb(0, 68, 253);
   }
   .image{
     background-repeat: no-repeat;
@@ -107,8 +108,8 @@ h3{
       <form action="" method="post">
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2010/05/Slimming-Worlds-burger-and-chips.jpg">
-            <img src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2010/05/Slimming-Worlds-burger-and-chips.jpg" alt="burger" width="600" height="300">
+          <a target="_blank" href="images/lunch/burger.jpg">
+            <img src="images/beverage/lunch.jpg" alt="burger" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -122,8 +123,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://www.nairaland.com/attachments/4044545_16316480grilledroastedhalfchickenwithchipsandketchupgermanfastfoodstockphoto_jpeg980ed654e8faa1819690865612c5bf99">
-            <img src="https://www.nairaland.com/attachments/4044545_16316480grilledroastedhalfchickenwithchipsandketchupgermanfastfoodstockphoto_jpeg980ed654e8faa1819690865612c5bf99" alt="chicken" width="600" height="300">
+          <a target="_blank" href="images/lunch/chips.jpg">
+            <img src="images/lunch/chips.jpg" alt="chicken" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -136,8 +137,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://twistedgrill.mzizzi.com/wp-content/uploads/2018/07/chapati-beans.jpg">
-            <img src="https://twistedgrill.mzizzi.com/wp-content/uploads/2018/07/chapati-beans.jpg" alt="Chapati" width="600" height="300">
+          <a target="_blank" href="images/lunch/chapati-beans.jpg">
+            <img src="images/lunch/chapati-beans.jpg" alt="Chapati" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -150,8 +151,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://yummy.co.ke/wp-content/uploads/2014/02/Sossi-Pilau.jpg">
-            <img src="https://yummy.co.ke/wp-content/uploads/2014/02/Sossi-Pilau.jpg" alt="pilau" width="600" height="300">
+          <a target="_blank" href="images/lunch/pilau.jpg">
+            <img src="images/lunch/pilau.jpg" alt="pilau" width="600" height="300">
           </a>
           <div class="desc">
             <input type="checkbox" id="rice" name="lunch[]" value="pilau">

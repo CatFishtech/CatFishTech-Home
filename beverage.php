@@ -54,6 +54,8 @@ h3{
 }
 .navbar {
     overflow: hidden;
+    background-color:rgb(9, 18, 43);
+
   }
   
   .navbar a {
@@ -66,11 +68,11 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(38, 90, 231);
+    background-color: rgb(26, 42, 88);
     color: black;
   }
   .navbar a.active{
-    background-color: rgb(38, 90, 231);
+    background-color: rgb(0, 68, 253);
   }
   .image{
     background-repeat: no-repeat;
@@ -106,8 +108,8 @@ h3{
       <form action="" method="post">
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://th.bing.com/th/id/OIP.1P4Cs1ZawIvAUDPVY9XBgAHaHa?pid=ImgDet&rs=1">
-            <img src="https://th.bing.com/th/id/OIP.1P4Cs1ZawIvAUDPVY9XBgAHaHa?pid=ImgDet&rs=1" alt="passion" width="600" height="300">
+          <a target="_blank" href="images/beverage/passion.jpg">
+            <img src="images/beverage/passion.jpg" alt="passion" width="600" height="300">
           </a>
           <div class="desc">
             <input type="checkbox" id="juice1" name="beverage[]" value="passion">
@@ -119,8 +121,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://th.bing.com/th/id/R836797182a185cb1204f8d54dc33416b?rik=R7zwEglLhw7%2fjw&pid=ImgRaw">
-            <img src="https://th.bing.com/th/id/R836797182a185cb1204f8d54dc33416b?rik=R7zwEglLhw7%2fjw&pid=ImgRaw" alt="mango" width="600" height="300">
+          <a target="_blank" href="images/beverage/passion.jpg">
+            <img src="images/beverage/mango.jpg" alt="mango" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -133,8 +135,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="http://ompk.biz/wp-content/uploads/2017/06/Pineapple-juice-250ml.jpg">
-            <img src="http://ompk.biz/wp-content/uploads/2017/06/Pineapple-juice-250ml.jpg" alt="pinapple" width="600" height="300">
+          <a target="_blank" href="images/beverage/pineapple.jpg">
+            <img src="images/beverage/pineapple.jpg" alt="pinapple" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -147,8 +149,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="http://img.aws.livestrongcdn.com/ls-article-image-400/ds-photo/getty/article/211/130/122746333.jpg">
-            <img src="http://img.aws.livestrongcdn.com/ls-article-image-400/ds-photo/getty/article/211/130/122746333.jpg" alt="apple" width="600" height="300">
+          <a target="_blank" href="images/beverage/apple.jpg">
+            <img src="images/beverage/apple.jpg" alt="apple" width="600" height="300">
           </a>
           <div class="desc">
             

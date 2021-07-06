@@ -57,6 +57,7 @@ h3{
 }
 .navbar {
     overflow: hidden;
+    background-color:rgb(9, 18, 43);
   }
   
   .navbar a {
@@ -69,16 +70,16 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(38, 90, 231);
+    background-color: rgb(26, 42, 88);
     color: black;
   }
   .navbar a.active{
-    background-color:rgb(38, 90, 231)
+    background-color:rgb(0, 68, 253);
   }
   .image{
     background-repeat: no-repeat;
-  background-attachment: local;  
-  background-size: cover;
+    background-attachment: local;  
+    background-size: cover;
   }
   .footer-dis{
     text-align: center;
@@ -113,8 +114,8 @@ h3{
       <form action="" method="post">
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://asianinspirations.com.au/wp-content/uploads/2019/01/R00982_Hong_Kong_Milk_Tea-2.jpg">
-            <img src="https://asianinspirations.com.au/wp-content/uploads/2019/01/R00982_Hong_Kong_Milk_Tea-2.jpg" alt="tea" width="600" height="300">
+          <a target="_blank" href="images/breakfast/milk.jpg">
+            <img src="images/breakfast/milk.jpg" alt="tea" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -128,8 +129,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://thumbs.dreamstime.com/b/cup-tea-toasted-bread-strawberry-jam-shape-heart-plate-wooden-table-tea-toasted-bread-jam-108192059.jpg">
-            <img src="https://thumbs.dreamstime.com/b/cup-tea-toasted-bread-strawberry-jam-shape-heart-plate-wooden-table-tea-toasted-bread-jam-108192059.jpg" alt="tea" width="600" height="300">
+          <a target="_blank" href="images/breakfast/tea.jpg">
+            <img src="images/breakfast/tea.jpg" alt="tea" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -142,8 +143,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://images.seekbusiness.com.au/client/original/1018/aef517a7-3597-4135-b876-7327e5bf4cfa.jpg">
-            <img src="https://images.seekbusiness.com.au/client/original/1018/aef517a7-3597-4135-b876-7327e5bf4cfa.jpg" alt="breakfast" width="600" height="300">
+          <a target="_blank" href="images/breakfast/full.jpg">
+            <img src="images/breakfast/full.jpg" alt="breakfast" width="600" height="300">
           </a>
           <div class="desc">
             
@@ -156,8 +157,8 @@ h3{
       
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="https://th.bing.com/th/id/R96d0759594f6564a1a889e9a6224241f?rik=7cr5gx4Pa9Ierg&riu=http%3a%2f%2ffarm5.static.flickr.com%2f4644%2f38749642194_1c8abf1382.jpg&ehk=Y2ybpw8z0hdY6P0txUg9U2yF7ztchZ9NKpgZwnh1UrY%3d&risl=&pid=ImgRaw">
-            <img src="https://th.bing.com/th/id/R96d0759594f6564a1a889e9a6224241f?rik=7cr5gx4Pa9Ierg&riu=http%3a%2f%2ffarm5.static.flickr.com%2f4644%2f38749642194_1c8abf1382.jpg&ehk=Y2ybpw8z0hdY6P0txUg9U2yF7ztchZ9NKpgZwnh1UrY%3d&risl=&pid=ImgRaw" alt="sausage"width="600" height="300">
+          <a target="_blank" href="images/breakfast/Sausage.jpg">
+            <img src="images/breakfast/Sausage.jpg" alt="sausage"width="600" height="300">
           </a>
           <div class="desc">
             
