@@ -42,7 +42,7 @@ else
 <link href="style1.css" rel='stylesheet' type='text/css' />
 <style>
   .list{
-    color: blue;
+    color: white;
     padding: 20px;
   }
   .list input{
@@ -50,11 +50,10 @@ else
   margin-left: 35px;
 }
 h3{
-  color: red;
+  color: white;
 }
 .navbar {
     overflow: hidden;
-    background-color:black;
   }
   
   .navbar a {
@@ -67,24 +66,30 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(38, 202, 231);
+    background-color: rgb(38, 90, 231);
     color: black;
   }
   .navbar a.active{
-    background-color: rgb(11, 240, 106);
+    background-color: rgb(38, 90, 231);
+  }
+  .image{
+    background-repeat: no-repeat;
+  background-attachment: local;  
+  background-size: cover;
   }
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
     padding: 55px 50px;
     width: 100%;
-    color: black;
-    background-color: White;
+    color: white;
+    background-color: rgb(0, 57, 214);
     
   }
+  
   </style>
 </head>
-<body>
+<body class="image" style="background-image: url('images/bg\ 3.jpg'); width: 100%;">
     <div class="header">
      <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>BEVERAGE MENU</h2>
@@ -181,7 +186,7 @@ h3{
      </div>
 
       <div class="clearfix">
-       <button type="submit" name= "save">PLACE ORDER</button>
+       <center><button type="submit" name= "save">PLACE ORDER</button></center>
       </div>
     </form>
     

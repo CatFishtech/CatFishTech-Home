@@ -45,7 +45,7 @@ else
 <link href="style1.css" rel='stylesheet' type='text/css' />
 <style>
   .list{
-    color: blue;
+    color: white;
     padding: 20px;
   }
   .list input{
@@ -53,11 +53,10 @@ else
   margin-left: 35px;
 }
 h3{
-  color: red;
+  color: white;
 }
 .navbar {
     overflow: hidden;
-    background-color:black;
   }
   
   .navbar a {
@@ -70,19 +69,19 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(38, 202, 231);
+    background-color: rgb(38, 90, 231);
     color: black;
   }
   .navbar a.active{
-    background-color: rgb(11, 240, 106);
+    background-color:rgb(38, 90, 231)
   }
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
     padding: 55px 50px;
     width: 100%;
-    color: black;
-    background-color: white;
+    color: White;
+    background-color: rgb(0, 57, 214);
     
   }
   </style>
@@ -188,7 +187,7 @@ h3{
      </p>
      </div>
        <div class="clearfix">
-       <button type="submit" name= "save">PLACE ORDER</button>
+       <center><button type="submit" name= "save">PLACE ORDER</button></center>
       </div>
 </form>
     <div class= "footer-dis">
