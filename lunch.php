@@ -72,6 +72,11 @@ h3{
   .navbar a.active{
     background-color: rgb(38, 90, 231);
   }
+  .image{
+    background-repeat: no-repeat;
+  background-attachment: local;  
+  background-size: cover;
+  }
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
@@ -83,7 +88,8 @@ h3{
   }
   </style>
 </head>
-<body>
+<body class="image" style="background-image: url('images/bg 3.jpg'); width: 100%;">
+
     <div class="header">
       <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
         <h2>LUNCH MENU</h2>

@@ -89,7 +89,7 @@ h3{
   
   </style>
 </head>
-<body class="image" style="background-image: url('images/bg\ 3.jpg'); width: 100%;">
+<body class="image" style="background-image: url('images/bg 3.jpg'); width: 100%;">
     <div class="header">
      <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>BEVERAGE MENU</h2>
