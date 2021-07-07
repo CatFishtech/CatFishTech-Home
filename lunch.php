@@ -84,7 +84,7 @@ h3{
     color: black;
     
   }
-  .button {
+  button {
     background-color: rgb(8, 4, 240);
     color: white;
     padding: 14px 20px;
