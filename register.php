@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
 
 if (isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
 				<button name="submit" class="btn">Register</button>
 			</div>
 			
-			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
+			<p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
 		</form>
 	</div>
 </body>
