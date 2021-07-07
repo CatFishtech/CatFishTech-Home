@@ -85,6 +85,17 @@ h3{
     color: black;
     
   }
+  .button {
+    background-color: rgb(8, 4, 240);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+    text-align: center;
+    
+  }
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
