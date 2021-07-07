@@ -6,7 +6,7 @@ body {
   .header {
     padding: 6px;
     text-align: center;
-    color: white;
+    color: black;
     
   }
 
@@ -194,7 +194,7 @@ body {
   
   
   button {
-    background-color: rgb(248, 153, 45);
+    background-color: rgb(8, 4, 240);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
