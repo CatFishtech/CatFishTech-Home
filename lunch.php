@@ -78,6 +78,12 @@ h3{
   background-attachment: local;  
   background-size: cover;
   }
+  .header {
+    padding: 6px;
+    text-align: center;
+    color: black;
+    
+  }
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
