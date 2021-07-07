@@ -7,19 +7,20 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: admin.php");
+    header("Location: cashier.php");
 }
 
 if (isset($_POST['submit'])) {
+	$agent = $_POST['agent'];
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+	$sql = "SELECT * FROM users WHERE email='$email', agent='$agent' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: admin.php");
+		header("Location: cashier.php");
 	} else {
 		echo "<script>alert('Email or Password is Wrong.')</script>";
 	}
@@ -36,15 +37,18 @@ if (isset($_POST['submit'])) {
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<title>CatFish Tech| Admin Login </title>
+<title>CatFish Tech| Admin Login</title>
 <link href="style1.css" rel='stylesheet' type='text/css' />
 
 </head>
-<body style="background-image: url('images/bg 2.jpg');">
+<body style="background-image: url('images/bg 3.jpg');">
 
       <div class="container">
 		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+			<div class="input-group">
+				<input type="agent" placeholder="Agent Name" name="agent" value="<?php echo $agent; ?>" required>
+			</div>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
 			</div>
@@ -55,6 +59,7 @@ if (isset($_POST['submit'])) {
 				<button name="submit" class="btn">Login</button>
 			</div>
 			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+
 		</form>
 </div>
 

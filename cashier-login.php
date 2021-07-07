@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email', agent='$agent' AND password='$password'";
+	$sql = "SELECT * FROM user WHERE email='$email', agent='$agent' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
@@ -58,6 +58,8 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
+			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+
 		</form>
 </div>
 
