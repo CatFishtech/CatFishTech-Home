@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: cashier-login.php");
 }
 ?>
 
@@ -65,12 +65,12 @@ tr:nth-child(even) {
 
 <body>
  
-  <div class="sidebar">
-    <a href="admin.php">Dashboard</a>
-    <a class="active" href="orders.php">Orders</a>
-    <a href="breakfast.php">Client Page</a>
-    <a href="index.php">Logout</a>
-  </div>
+<div class="sidebar">
+        <a href="reports.php">Reports</a>
+        <a class="active" href="orders.php">Orders</a>
+        <a href="breakfast.php">Client Page</a>
+        <a href="logout.php">Logout</a>
+      </div>
   
   <div class="content">
     <div class="header">
@@ -79,6 +79,9 @@ tr:nth-child(even) {
     <h3>Orders</h3>
     </div>
     <br>
+    <?php echo "<h1>" Welcome. $_SESSION['agent'] . "</h1>"; ?>
+    <p><i>Reports will be archived after one week!!</i></p>
+
     <div class="row">
   <div class="column">
     <table>
@@ -93,7 +96,7 @@ $conn = mysqli_connect("freedb.tech", "freedbtech_catfish", "catfish61", "freedb
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT name, entrytime FROM break";
+$sql = "SELECT COUNT name, entrytime FROM break";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row

@@ -13,6 +13,7 @@ if (isset($_SESSION['username'])) {
 if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$email = $_POST['email'];
+	$agent = $_POST['agent'];
 	$password = md5($_POST['password']);
 	$cpassword = md5($_POST['cpassword']);
 
@@ -20,13 +21,14 @@ if (isset($_POST['submit'])) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password)
-					VALUES ('$username', '$email', '$password')";
+			$sql = "INSERT INTO users (username, email, agent, password)
+					VALUES ('$username', '$email', '$agent','$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
 				$username = "";
 				$email = "";
+				$agent = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {
@@ -62,6 +64,9 @@ if (isset($_POST['submit'])) {
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
 			<div class="input-group">
 				<input type="text" placeholder="Company Name" name="username" value="<?php echo $username; ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="agent" placeholder="Agent Name" name="agent" value="<?php echo $agent; ?>" required>
 			</div>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>

@@ -32,8 +32,9 @@ body {
     background-color: rgb(38, 202, 231);
     color: black;
   }
-
-  
+  .topnav-right{
+    float: right;
+  }  
   
   .image{
     background-repeat: no-repeat;

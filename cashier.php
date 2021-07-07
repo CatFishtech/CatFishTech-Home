@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: admin-login.php");
+    header("Location: cashier-login.php");
 }
 
 ?>
@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CatFishTech| Admin Panel</title>
+  <title>CatFishTech| Cashier Panel</title>
   <link href="style2.css" rel='stylesheet' type='text/css' />
   <link href="style3.css" rel='stylesheet' type='text/css' />
     
@@ -22,9 +22,7 @@ if (!isset($_SESSION['username'])) {
 <body>
  
   <div class="sidebar">
-  <a class="active" href="reports.php">Reports</a>
-    <a href="orders.php">Orders</a>
-    <a href="cashier.php">Cashier</a>
+    <a class="active" href="orders.php">Orders</a>
     <a href="breakfast.php">Client Page</a>
     <a href="logout.php">Logout</a>
   </div>
@@ -32,11 +30,10 @@ if (!isset($_SESSION['username'])) {
   <div class="content">
     <div class="header">
     <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
-    <h2>ADMIN DASHBOARD</h2>
-    </div>
-    <br>
+    <h2>CASHIER</h2>
+    </div><br>
     <?php echo "<h1>" Welcome. $_SESSION['agent'] . "</h1>"; ?>
-
+    <br>
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>
       <p>Copyright © 2021 CatFishTech</p>
