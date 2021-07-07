@@ -7,10 +7,10 @@ if (!isset($_SESSION['username'])) {
 
 //
 if (isset($_POST['submit'])) {
-	$drinks = $_POST['agent'];
-	$luch = $_POST['email'];
-	$drinks = $_POST['password'];
-$sql = "SELECT * FROM freedbtech_catfish WHERE break='$drinks', luch='$luch' AND drinks='$drinks'";
+	$break = $_POST['break'];
+	$luch = $_POST['luch'];
+	$drinks = $_POST['drinks'];
+$sql = "SELECT * FROM freedbtech_catfish WHERE break='$break', luch='$luch' AND drinks='$drinks'";
 
 
 ?>

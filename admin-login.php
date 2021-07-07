@@ -11,13 +11,12 @@ if (isset($_SESSION['username'])) {
 }
 
 if (isset($_POST['submit'])) {
-	$agent = $_POST['agent'];
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email', agent='$agent' AND password='$password'";
+	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
-	if ($result->num_rows > 1) {
+	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
 		header("Location: admin.php");
@@ -46,9 +45,6 @@ if (isset($_POST['submit'])) {
       <div class="container">
 		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
-			<div class="input-group">
-				<input type="agent" placeholder="Agent Name" name="agent" value="<?php echo $agent; ?>" required>
-			</div>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
 			</div>
