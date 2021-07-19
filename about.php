@@ -10,13 +10,18 @@
 
 </head>
 
-<body>
+<body style="background-color: white">
   
-  <div class="topnav">
+<div class="topnav">
     <center><img src="images/logo.jpg" alt="logo" width="200px"></center>
     <a href="index.php">Home</a>
-    <a href="login.php">Login</a>
+    <a href="cashier-login.php">Cashier Login</a>
     <a href="about.php">About</a>
+
+    <div class="topnav-right">
+    <a href="admin-login.php">Admin Login</a>
+    </div>
+
   </div>
   
   <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
@@ -39,7 +44,7 @@
     </p>
 </article>
 
-  
+
 
 </body>
 <footer style="background-color: black;text-align: center;color: white; padding: 60px; height: 300px;">

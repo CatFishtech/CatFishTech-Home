@@ -32,7 +32,7 @@ if (!isset($_SESSION['username'])) {
     <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>CASHIER</h2>
     </div><br>
-    <?php echo "<h1>" Welcome. $_SESSION['agent'] . "</h1>"; ?>
+
     <br>
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>

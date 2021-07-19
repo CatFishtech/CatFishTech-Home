@@ -12,15 +12,15 @@ if (isset($_SESSION['username'])) {
 
 if (isset($_POST['submit'])) {
 	$agent = $_POST['agent'];
-	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email', agent='$agent' AND password='$password'";
+	$sql = "SELECT * FROM user WHERE agent='$agent' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
 		header("Location: cashier.php");
+
 	} else {
 		echo "<script>alert('Email or Password is Wrong.')</script>";
 	}
@@ -50,15 +50,11 @@ if (isset($_POST['submit'])) {
 				<input type="agent" placeholder="Agent Name" name="agent" value="<?php echo $agent; ?>" required>
 			</div>
 			<div class="input-group">
-				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
-			</div>
-			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
-			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 
 		</form>
 </div>

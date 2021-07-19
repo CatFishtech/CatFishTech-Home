@@ -35,8 +35,6 @@ if (!isset($_SESSION['username'])) {
     <h2>ADMIN DASHBOARD</h2>
     </div>
     <br>
-    <?php echo "<h1>" Welcome. $_SESSION['agent'] . "</h1>"; ?>
-
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>
       <p>Copyright © 2021 CatFishTech</p>

@@ -10,7 +10,8 @@
 
 </head>
 
-<body>
+<body style="background-color: white">
+
   
   <div class="topnav">
     <center><img src="images/logo.jpg" alt="logo" width="200px"></center>

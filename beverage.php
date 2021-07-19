@@ -8,10 +8,10 @@ if (!isset($_SESSION['username'])) {
 
 if(isset($_POST['save']))  
 {  
-$host="freedb.tech";//host name  
-$username="freedbtech_catfish"; //database username  
-$word="catfish61";//database word  
-$db_name="freedbtech_catfish";//database name  
+  $host="localhost";//host name  
+  $username="root"; //database username  
+  $word="";//database word  
+  $db_name="catfish";//database name  
 $tbl_name="drinks"; //table name  
 $con=mysqli_connect("$host", "$username", "$word","$db_name")or die("cannot connect");//connection string  
 $checkbox1=$_POST['beverage'];  
@@ -29,6 +29,7 @@ else
    {  
       echo'<script>alert("Order FAILED!!")</script>';  
    }  
+
 }  
 ?>  
 
@@ -39,8 +40,13 @@ else
 <title>CatFish Tech| Beverage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style1.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style1.css"/>
 <style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+
+  }
   .list{
     color: black;
     padding: 20px;
@@ -82,33 +88,85 @@ h3{
   .header {
     padding: 6px;
     text-align: center;
-    color: black;
-    
-  }
-  button {
-    background-color: rgb(8, 4, 240);
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 400px;
-    text-align: center;
-    
+    background-image:url("images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
+  .button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  
   .footer-dis{
     text-align: center;
     box-sizing: border-box;
     padding: 55px 50px;
     width: 100%;
-    color: white;
-    background-color:rgb(39, 42, 226);
+    color: black;
     
   }
+  div.gallery {
+    border: 1px solid #ccc;
+  }
   
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 400;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color:#120ef3;
+    color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+ 
   </style>
 </head>
-<body>
+<body style="background-color: white">
+
     <div class="header">
      <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
     <h2>BEVERAGE MENU</h2>
@@ -181,7 +239,6 @@ h3{
       <div class="list">
       <p> 
         <h3>Kindly select Table No:</h3>
-        
      <input type="checkbox" id="juice1" name="beverage[]" value="Table1">
      <label for="juice1"> Table 1</label>
      <input type="checkbox" id="juice1" name="beverage[]" value="Table2">
@@ -203,10 +260,9 @@ h3{
      
      </p>
      </div>
-
-      <div class="clearfix">
-       <center><button type="submit" name= "save">PLACE ORDER</button></center>
-      </div>
+    
+       <center><button class="button"  type="submit" name= "save">PLACE ORDER</button></center>
+    
     </form>
     
     <div class= "footer-dis">

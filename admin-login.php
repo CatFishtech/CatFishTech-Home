@@ -7,20 +7,19 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: cashier.php");
+    header("Location: admin.php");
 }
 
 if (isset($_POST['submit'])) {
 	$agent = $_POST['agent'];
-	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email', agent='$agent' AND password='$password'";
+	$sql = "SELECT * FROM user WHERE agent='$agent' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: cashier.php");
+		header("Location: admin.php");
 	} else {
 		echo "<script>alert('Email or Password is Wrong.')</script>";
 	}
@@ -48,9 +47,6 @@ if (isset($_POST['submit'])) {
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
 			<div class="input-group">
 				<input type="agent" placeholder="Agent Name" name="agent" value="<?php echo $agent; ?>" required>
-			</div>
-			<div class="input-group">
-				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
 			</div>
 			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
