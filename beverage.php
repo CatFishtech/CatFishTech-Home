@@ -201,7 +201,7 @@ h3{
           </a>
           <div class="desc">
             
-            <input type="checkbox" id="juice1" name="beverage[]" value="mango">
+            <input type="checkbox" id="juice1" name="beverage[]" value="Mango">
             <label for="juice1"> Mango  Juice</label>
             
           </div>
@@ -215,7 +215,7 @@ h3{
           </a>
           <div class="desc">
             
-            <input type="checkbox" id="juice1" name="beverage[]" value="pinapple">
+            <input type="checkbox" id="juice1" name="beverage[]" value="Pinapple">
             <label for="juice1"> Pinapple  Juice</label>
             
           </div>
@@ -229,7 +229,7 @@ h3{
           </a>
           <div class="desc">
             
-            <input type="checkbox" id="juice1" name="beverage[]" value="apple">
+            <input type="checkbox" id="juice1" name="beverage[]" value="Apple">
             <label for="juice1"> Apple  Juice</label>
             
           </div>
