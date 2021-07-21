@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
 <body>
  
   <div class="sidebar">
-    <a class="active" href="orders.php">Orders</a>
+    <a class="active" href="cashier-orders.php">Orders</a>
     <a href="breakfast.php">Client Page</a>
     <a href="logout.php">Logout</a>
   </div>

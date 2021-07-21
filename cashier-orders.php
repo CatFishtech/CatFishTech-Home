@@ -74,8 +74,7 @@ tr:nth-child(even) {
 <body>
  
 <div class="sidebar">
-        <a href="reports.php">Reports</a>
-        <a class="active" href="orders.php">Orders</a>
+        <a class="active" href="cashier-orders.php">Orders</a>
         <a href="breakfast.php">Client Page</a>
         <a href="logout.php">Logout</a>
       </div>
