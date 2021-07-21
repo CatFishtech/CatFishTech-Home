@@ -24,6 +24,15 @@ if (isset($_POST['submit'])) {
 		echo "<script>alert('Email or Password is Wrong.')</script>";
 	}
 }
+//remember me cookies
+if(!empty($_POST["remember"])) {
+	setcookie ("agent",$_POST["agent"],time()+ 3600);
+	setcookie ("password",$_POST["password"],time()+ 3600);
+} else {
+	setcookie("agent","");
+	setcookie("password","");
+}
+
 
 ?>
 
@@ -54,6 +63,7 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
+			<p><input type="checkbox" name="remember"> Remember me</p><br>
 			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 
 		</form>
