@@ -8,9 +8,9 @@ if (!isset($_SESSION['username'])) {
 
 if(isset($_POST['save']))  
 {  
-  $host="localhost";//host name  
-  $username="root"; //database username  
-  $word="";//database word  
+  $host="db4free.net";//host name  
+  $username="catfish"; //database username  
+  $word="cUAKF2J''jGvSjC";//database word  
   $db_name="catfish";//database name 
 $tbl_name="luch"; //table name  
 $con=mysqli_connect("$host", "$username", "$word","$db_name")or die("cannot connect");//connection string  
