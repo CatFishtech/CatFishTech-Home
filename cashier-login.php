@@ -27,8 +27,8 @@ if (isset($_POST['submit'])) {
 }
 //remember me cookies
 if(!empty($_POST["remember"])) {
-	setcookie ("agent",$_POST["agent"],time()+ 3600);
-	setcookie ("password",$_POST["password"],time()+ 3600);
+	setcookie ("agent",$_POST["agent"],time()+ 43200);
+	setcookie ("password",$_POST["password"],time()+ 43200);
 } else {
 	setcookie("agent","");
 	setcookie("password","");
