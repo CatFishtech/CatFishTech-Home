@@ -97,7 +97,8 @@ tr:nth-child(even) {
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+
 
 // Check connection
 if ($conn->connect_error) {
@@ -124,7 +125,8 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+
 
 // Check connection
 if ($conn->connect_error) {
@@ -151,7 +153,8 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+
 
 // Check connection
 if ($conn->connect_error) {

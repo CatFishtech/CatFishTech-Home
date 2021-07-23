@@ -1,9 +1,9 @@
 
 <?php 
 
-$server = "db4free.net";
+$server = "catfishtech.database.windows.net";
 $user = "catfish";
-$pass = "cUAKF2J''jGvSjC";
+$pass = "Christine61";
 $database = "catfish";
 
 $conn = mysqli_connect($server, $user, $pass, $database);

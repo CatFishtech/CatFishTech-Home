@@ -72,7 +72,7 @@ tr:nth-child(even) {
  
 <div class="sidebar">
         <a class="active" href="reports.php">Reports</a>
-        <a href="orders.php">Orders</a>
+        <a href="admin-orders.php">Orders</a>
         <a href="breakfast.php">Client Page</a>
         <a href="logout.php">Logout</a>
       </div>
@@ -95,7 +95,7 @@ tr:nth-child(even) {
       <h4>Total Ordered Breakfast</h4>
       
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -115,7 +115,8 @@ $conn->close();
       <h4>Total Ordered Beverage</h4>
       
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -135,7 +136,8 @@ $conn->close();
       <h4>Total Ordered Lunch</h4>
       
       <?php
-$conn = mysqli_connect("db4free.net", "catfish", "cUAKF2J''jGvSjC", "catfish");
+$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
