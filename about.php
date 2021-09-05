@@ -44,8 +44,6 @@
     </p>
 </article>
 
-
-
 </body>
 <footer style="background-color: black;text-align: center;color: white; padding: 60px; height: 300px;">
   <h3>CatFishTech<span>Co.</span></h3>

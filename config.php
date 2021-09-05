@@ -1,6 +1,6 @@
 <?php 
 
-$server = "local";
+$server = "localhost";
 $user = "root";
 $pass = "";
 $database = "catfish";

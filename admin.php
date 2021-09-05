@@ -26,6 +26,8 @@ if (!isset($_SESSION['username'])) {
     <a href="admin-orders.php">Orders</a>
     <a href="cashier.php">Cashier</a>
     <a href="breakfast.php">Client Page</a>
+    <a href="cashier-register.php">New User</a>
+    <a href="admin-register.php">New Admin User</a>
     <a href="logout.php">Logout</a>
   </div>
   

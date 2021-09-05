@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 	$agent = $_POST['agent'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM user WHERE agent='$agent' AND password='$password'";
+	$sql = "SELECT * FROM main WHERE agent='$agent' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
