@@ -64,7 +64,7 @@ if(!empty($_POST["remember"])) {
 				<button name="submit" class="btn">Login</button>
 			</div>
 			<p><input type="checkbox" name="remember"> Remember me</p><br>
-			<p class="login-register-text">Don't have an account? <a href="admin-register.php">Register Here</a>.</p>
+			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 
 		</form>
 </div>
