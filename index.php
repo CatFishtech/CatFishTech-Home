@@ -59,7 +59,7 @@
   
 
 </body>
-<footer style="background-color: black;text-align: center;color: white; padding: 60px; height: 300px;">
+<footer style="background-color: black;text-align: center;color: white; padding: 60px; height: 100px;">
   <h3>CatFishTech<span>Co.</span></h3>
 <div style="text-align: center;color: white;">
      <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>

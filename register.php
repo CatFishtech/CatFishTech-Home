@@ -3,26 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css">
 <title>CatFish Tech| Admin Login</title>
 <style>
+.container{
+    color: white;
+    text-align: center;
+}
 .button{
     text-align: center;
-    background-color: blue;
+    background-color: rgb(5, 33, 189);
     margin: 20px;
     border-radius: 10px;
     position: relative;
-    padding: 12px 10px;
+    padding: 12px 40px;
     text-decoration: none;
-    color: white;
-    width: 50%;
-
-
+    color:rgb(252, 252, 252);
+    opacity: 0.6;
+    transition: 0.3s;
+   
 }
+.button:hover {opacity: 1}
 .error {
-    font-size: xx-large;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
+    padding-top: 250px;
 }
 
 </style>
@@ -34,10 +40,10 @@
 ERROR!!
 Kindly Contact Your Admin For REGISTRATION!!
 </h1>
-</div><br>
-
-<div class="button">
-    <a href="index.php">Go Back To Home</a>
+<br>
+<p>
+<a href="index.php" class="button">Go Back To Home</a>
+</p>
 </div>
 </div>
 

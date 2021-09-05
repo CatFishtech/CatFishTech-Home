@@ -71,9 +71,11 @@ tr:nth-child(even) {
 <body>
  
 <div class="sidebar">
-        <a class="active" href="reports.php">Reports</a>
+        <a class="active" href="admin-reports.php">Reports</a>
         <a href="admin-orders.php">Orders</a>
         <a href="breakfast.php">Client Page</a>
+        <a href="cashier-register.php">New User</a>
+        <a href="admin-register.php">New Admin User</a>
         <a href="logout.php">Logout</a>
       </div>
   

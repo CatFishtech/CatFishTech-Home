@@ -23,6 +23,7 @@ if (!isset($_SESSION['username'])) {
 .row {
   margin-left:-5px;
   margin-right:-5px;
+  
 }
   
 .column {
@@ -49,17 +50,13 @@ table {
   border: 1px solid #ddd;
 }
 
-
-
 th, td {
   text-align: left;
   padding: 16px;
-  
-  
 }
 
 tr:nth-child(even) {
-  background-color: blue;
+  background-color: #f2f2f2;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
@@ -74,57 +71,29 @@ tr:nth-child(even) {
 <body>
  
 <div class="sidebar">
-        <a href="admin-reports.php">Reports</a>
-        <a class="active" href="admin-orders.php">Orders</a>
+        <a class="active" href="cashier-reports.php">Reports</a>
+        <a href="admin-orders.php">Orders</a>
         <a href="breakfast.php">Client Page</a>
-        <a href="cashier-register.php">New User</a>
-        <a href="admin-register.php">New Admin User</a>
         <a href="logout.php">Logout</a>
       </div>
   
   <div class="content">
     <div class="header">
     <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
-    <h2>ORDERS</h2>
+    <h2>REPORTS</h2>
     </div>
     <br>
     <p><i>Reports will be archived after one week!!</i></p>
+    <center><p><i>Weekly report!!</i></p></center>
 
-    <center><div class="row">
+
+
+<center>
+    <div class="row">
   <div class="column">
     <table>
-      <h4>Breakfast</h4>
- 
-      <tr>
-        <th>Name</th>
-         <th>Entry Time</th>
-      </tr>
-      <?php
-$conn = mysqli_connect("localhost", "root", "", "catfish");
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT name, entrytime FROM break";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["name"]. "</td><td>" . $row["entrytime"] . "</td><td>";
-}
-echo "</table>";
-} else { echo "0 results"; }
-$conn->close();
-?>
-    </table>
-  </div>
-  <div class="column">
-    <table>
-      <h4>Beverage</h4>
-      <tr>
-        <th>Name</th>
-         <th>Entry Time</th>
-      </tr>
+      <h4>Total Ordered Breakfast</h4>
+      
       <?php
 $conn = mysqli_connect("localhost", "root", "", "catfish");
 
@@ -132,48 +101,59 @@ $conn = mysqli_connect("localhost", "root", "", "catfish");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT name, entrytime FROM drinks";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["name"]. "</td><td>" . $row["entrytime"] . "</td><td>";
+$query1=mysqli_query($conn,"select * from break");
+$totalorder=mysqli_num_rows($query1);
+{
+echo "$totalorder";
 }
-echo "</table>";
-} else { echo "0 results"; }
 $conn->close();
 ?>
     </table>
   </div>
+  
   <div class="column">
     <table>
-      <h4>Lunch</h4>
-      <tr>
-        <th>Name</th>
-         <th>Entry Time</th>
-      </tr>
+      <h4>Total Ordered Beverage</h4>
+      
       <?php
 $conn = mysqli_connect("localhost", "root", "", "catfish");
+
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT name, entrytime FROM luch";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["name"]. "</td><td>" . $row["entrytime"] . "</td><td>";
+$query1=mysqli_query($conn,"select * from drinks");
+$totalorder=mysqli_num_rows($query1);
+{
+echo "$totalorder";
 }
-echo "</table>";
-} else { echo "0 results"; }
+$conn->close();
+?>
+    </table>
+  </div>
+
+  <div class="column">
+    <table>
+      <h4>Total Ordered Lunch</h4>
+      
+      <?php
+$conn = mysqli_connect("localhost", "root", "", "catfish");
+
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$query1=mysqli_query($conn,"select * from luch");
+$totalorder=mysqli_num_rows($query1);
+{
+echo "$totalorder";
+}
 $conn->close();
 ?>
     </table>
   </div>
 </div>
 </center>
-
 
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>
