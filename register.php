@@ -24,7 +24,7 @@
 }
 .button:hover {opacity: 1}
 .error {
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
