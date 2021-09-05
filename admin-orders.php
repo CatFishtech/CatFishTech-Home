@@ -98,7 +98,7 @@ tr:nth-child(even) {
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
 
 
 // Check connection
@@ -126,7 +126,8 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
+
 
 
 // Check connection
@@ -154,7 +155,7 @@ $conn->close();
          <th>Entry Time</th>
       </tr>
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
 
 
 // Check connection

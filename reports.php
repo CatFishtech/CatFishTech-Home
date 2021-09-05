@@ -95,7 +95,8 @@ tr:nth-child(even) {
       <h4>Total Ordered Breakfast</h4>
       
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
+
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
@@ -115,7 +116,7 @@ $conn->close();
       <h4>Total Ordered Beverage</h4>
       
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
 
 // Check connection
 if ($conn->connect_error) {
@@ -136,7 +137,7 @@ $conn->close();
       <h4>Total Ordered Lunch</h4>
       
       <?php
-$conn = mysqli_connect("catfishtech.database.windows.net", "catfish", "Christine61", "catfish");
+$conn = mysqli_connect("localhost", "root", "", "catfish");
 
 // Check connection
 if ($conn->connect_error) {
@@ -153,8 +154,6 @@ $conn->close();
   </div>
 </div>
 </center>
-
-
 
     <div class= "footer">
       <p>Made by Kimae Ngowa</p>

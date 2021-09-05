@@ -8,9 +8,9 @@ if (!isset($_SESSION['username'])) {
 
 if(isset($_POST['save']))  
 {  
-  $host="catfishtech.database.windows.net";//host name  
-  $username="catfish"; //database username  
-  $word="Christine61";//database word  
+  $host="localhost";//host name  
+  $username="root"; //database username  
+  $word="";//database word  
   $db_name="catfish";//database name  
 $tbl_name="drinks"; //table name  
 $con=mysqli_connect("$host", "$username", "$word","$db_name")or die("cannot connect");//connection string  
