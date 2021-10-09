@@ -1,6 +1,11 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(245, 245, 248);
+    background-image: url('images/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
   }
 
   .header {
@@ -45,7 +50,7 @@ body {
 
   .text{
     color:white;
-    padding-top: 80px;
+    padding-top: 30px;
 
   }
 
@@ -89,7 +94,7 @@ body {
     .columns {
       width: 100%;
     }
-    .price.button {
+    .bt{
       background-color: #04AA6D;
       border: none;
       color: white;

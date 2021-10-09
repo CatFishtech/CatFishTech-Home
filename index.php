@@ -1,71 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style1.css" rel='stylesheet' type='text/css' />
-  <title>CatFish Tech| Software Design At Its Core</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatFish Tech| Admin Login</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('images/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+  }
+.container{
+    color: white;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    background-color: red;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    transition: 0.3s;
+   
+}
+.button:hover {opacity: 1}
+.text {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
 
-
+</style>
 </head>
+<body>
+<div id="container">
+<div class="text">
+<h1>
+Catfish Tech
+</h1>
+<h2>Hotel Ordering Platform</h2>
+<br><br>
+<p>
+<a href="cashier-login.php" class="button">Cashier Login</a>
+<a href="admin-login.php" class="button">Admin Login</a>
 
-<body style="background-color: white">
-
-  
-  <div class="topnav">
-    <center><img src="images/logo.jpg" alt="logo" width="200px"></center>
-    <a href="index.php">Home</a>
-    <a href="cashier-login.php">Cashier Login</a>
-    <a href="about.php">About</a>
-
-    <div class="topnav-right">
-    <a href="admin-login.php">Admin Login</a>
-    </div>
-
-  </div>
-  
-  <div class="image" style="background-image: url('images/home.jpg');height: 500px;">
-<div class="text" style="color:white;"><br><br>
-  <h1 align="center" >CatFish Tech</h1>
-  <h2 align="center">FOOD ORDERING PLATFORM</h2>
+</p>
 </div>
-</div><br>
-<p style="color: black;font: 1em Times New Roman;text-align: center;"><b>PRICING</b></p>
-<div class="columns">
-  <ul class="price">
-    <li class="header" style="background-color: rgb(20, 214, 240);color: white;"> Premium Package</li>
-    <li class="grey">KSH. 150,000.</li>
-    <li>Gadget Installation @ksh.20,000.</li>
-    <li>Tablets @ksh.80,000. </li>
-    <li>Maintenance @ksh.5,000.</li>
-    <li>Full Platform Access @ksh.30.000.</li>
-    <li><a href="mailto:qimate@hotmail.com" style="background-color: turquoise; padding: 10px 25px;text-align: center;color: white;">Select Package</a></li>
-  </ul>
 </div>
 
-<div class="columns">
-  <ul class="price">
-    <li class="header" style="background-color: rgb(57, 132, 231);color: white;">Basic Package</li>
-    <li class="grey">KSH. 45,000</li>
-    <li>Gadget Installation @ksh.10,000</li>
-    <li>Tablets (user purchased) </li>
-    <li>Maintenance @ksh.5,000</li>
-    <li>Full Platform Access @ksh.30.000</li>
-    <li><a href="mailto:qimate@hotmail.com" style="background-color: turquoise; padding: 10px 25px;text-align: center;color: white;">Select Package</a></li>
-  </ul>
-</div><br>
-
-  
 
 </body>
-<footer style="background-color: black;text-align: center;color: white; padding: 60px; height: 100px;">
-  <h3>CatFishTech<span>Co.</span></h3>
-<div style="text-align: center;color: white;">
-     <p><a href="mailto:qimate@hotmail.com">support@catfishtech.com</a></p>
-
-     <p>CatFishTechCo. © 2021</p>
-   </div>
- </footer>
-
 </html>
