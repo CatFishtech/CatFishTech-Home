@@ -41,20 +41,30 @@ else
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style1.css" rel='stylesheet' type='text/css' />
 <style>
+  body {
+    background-image: url('images/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+  }
   .list{
-    color: black;
+    color: grey;
     padding: 20px;
+    background: inherit;
   }
   .list input{
   padding: 5px;
   margin-left: 35px;
 }
 h3{
-  color: black;
+  color: grey;
 }
 .navbar {
     overflow: hidden;
-    background-color: rgb(9, 3, 94);
+    border: 1px white solid;
+    
   }
   
   .navbar a {
@@ -67,25 +77,21 @@ h3{
   }
   
   .navbar a:hover {
-    background-color: rgb(0, 68, 253);
-    color: black;
+    color: rgb(0, 68, 253);
   }
   .navbar a.active{
-    background-color: rgb(0, 68, 253);
+    color:rgb(0, 68, 253);
   }
+  
   .image{
     background-repeat: no-repeat;
-  background-attachment: local;  
-  background-size: cover;
+    background-attachment: local;  
+    background-size: cover;
   }
-  .header {
+  section {
     padding: 6px;
     text-align: center;
     color: white;
-    background-image:url("images/mountains.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
   }
   .button {
     background-color: blue;
@@ -100,17 +106,10 @@ h3{
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 10px;
   }
   .button:hover {
     opacity: 1;
-  }
-  .footer-dis{
-    text-align: center;
-    box-sizing: border-box;
-    padding: 55px 50px;
-    width: 100%;
-    color: black;
-    
   }
 
   div.gallery {
@@ -129,7 +128,7 @@ h3{
   div.desc {
     padding: 15px;
     text-align: center;
-    background-color:#120ef3;
+    background-color: inherit;
     color: white;
   }
   
@@ -140,7 +139,7 @@ h3{
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-    background-color: rgb(250, 250, 250);
+    background-color: inherit;
   }
   
   @media only screen and (max-width: 700px) {
@@ -155,22 +154,30 @@ h3{
       width: 100%;
     }
   }
+  @media only screen and (max-width: 400px) {
+    .navbar a {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .list {
+      width: 100%;
+    }
+  }
   </style>
 </head>
 <body style="background-color: white">
 
-    <div class="header">
+    <section>
       <?php echo "<h1>" . $_SESSION['username'] . "</h1>"; ?>
         <h2>LUNCH MENU</h2>
-      </div>
+    </section>
       <div class="navbar">
       <a href="breakfast.php">Breakfast</a>
         <a href="beverage.php">Beverage</a>
          <a class ="active" href="lunch.php">Lunch</a>
          
-        <div class="log">
-          <a href="logout.php">Logout</a>
-        </div>
+       
       </div>
       <br>
       <form action="" method="post">
@@ -256,9 +263,6 @@ h3{
      <center><button class="button" type="submit" name= "save">PLACE ORDER</button></center>
      
     </form>
-     <div class= "footer-dis">
-      <p>Made by Kimae Ngowa</p>
-      <p>Copyright © 2021 CatFishTech</p>
-    </div>
+    
     </body> 
     </html>

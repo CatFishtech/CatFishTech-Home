@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url('images/home.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -147,9 +147,7 @@ body {
 
 
   }
-  .log  {
-    float: right;
-  }
+  
   
  
   

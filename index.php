@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CatFish Tech| Admin Login</title>
-<style>
+<title>CatFish Tech| Technology at its Core</title>
+
+<style type="text/css" media="screen">
+
   body {
     font-family: 'Times New Roman', Times, serif;
     background-image: url('images/home.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 100vh;
     
   }
 .container{
@@ -24,7 +26,7 @@
     margin: 20px;
     border-radius: 10px;
     position: relative;
-    padding: 12px 30px;
+    padding: 8px 30px;
     text-decoration: none;
     color: white;
     opacity: 0.6;
@@ -33,11 +35,11 @@
 }
 .button:hover {opacity: 1}
 .text {
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 </style>
