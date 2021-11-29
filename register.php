@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css" media="screen">
-
 <title>CatFish Tech| Admin Login</title>
-<style>
+
+<style type="text/css" media="screen">
 .container{
     color: white;
     text-align: center;
